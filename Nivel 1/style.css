@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-size: 50px;
+    filter: drop-shadow(0 5px 1070px rgba(0, 0, 0, 0.19));
+    margin-bottom: 20px;
+    color: white;
+}
+
+.container{
+    flex-direction: column;
+    text-align: center;
+    width: 702px;
+    border-radius: 25px;
+    height: 642px;
+    background-color: #1F2D5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list{
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    width: 503px;
+    overflow: hidden;
+    height: 417px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: right;
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 80px;
+    flex-direction: column;    
+    height: 300px;
+}
+
+ul li{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 333px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    outline: none;
+    color: #1F2D5F;
+    background-color: white;
+    font-size: 12px;
+}
+
+ul li span{
+    display: none;
+    font-size: 10px;
+    position: absolute;
+    width: 18px;
+    padding: 10px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: #1F2D5F;
+    margin-left: 350px;
+}
+
+.inputAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+input{
+    font-size: 12px;
+    width: 333px;
+    height: 35px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    border: 1px solid white;
+    outline: none;
+    letter-spacing: 2px;
+    color: #1F2D5F;
+}
+
+button{
+    cursor: pointer;
+    width: 77px;
+    height: 35px;
+    border-radius: 0 10px 10px 0;
+    background-color: #3A4980;
+    color: white;
+    letter-spacing: 2px;
+    transition: 1s;
+    border: 1px solid white;
+}
+
+button:hover{
+    border: 1px solid #2b3a6f;
+    letter-spacing: 3px;
+    background-color: #2b3a6f;
+}
+
+.list p{
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: red;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

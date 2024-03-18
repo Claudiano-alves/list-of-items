@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angular JS</title>
+</head>
+<body>
+  
+  <main class="container" ng-app="myShoppingList" ng-controller="myCtrl">
+    <h2>Lista</h2>
+    <div class="list">
+      <ul>
+        <!-- Loop usando HTML ->> $INDEX nessa caso representa a posíção que estamos percorrendo no loop -->
+        <li ng-repeat="x in products">{{x}}<span style="cursor: pointer;" ng-click="removerItem($index)">&times;</span></li>
+      </ul>
+      <div class="inputAdd">
+        <input ng-model="item">
+        <button ng-click="addItem()">add</button>
+      </div>
+      <p>{{errortext}}</p>
+    </div>
+  </main>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
