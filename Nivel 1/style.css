@@ -69,6 +69,7 @@ ul li{
     color: #1F2D5F;
     background-color: white;
     font-size: 12px;
+    position: relative;
 }
 
 ul li span{

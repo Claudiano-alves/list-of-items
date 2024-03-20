@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Angular JS</title>
 </head>
 <body>
@@ -12,11 +13,11 @@
     <h2>Lista</h2>
     <div class="list">
       <ul>
-        <!-- Loop usando HTML ->> $INDEX nessa caso representa a posíção que estamos percorrendo no loop -->
+        <!-- Loop usando HTML ->> $index nessa caso representa a posíção que estamos percorrendo no loop -->
         <li ng-repeat="x in products">{{x}}<span style="cursor: pointer;" ng-click="removerItem($index)">&times;</span></li>
       </ul>
       <div class="inputAdd">
-        <input ng-model="item">
+        <input ng-model="item" ng-focus="" id="FocusInput">
         <button ng-click="addItem()">add</button>
       </div>
       <p>{{errortext}}</p>
@@ -25,6 +26,7 @@
       
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-    <script src="script.js"></script>
+    <script src="angular.js"></script>
+    <script src="jquery.js"></script>
 </body>
 </html>
